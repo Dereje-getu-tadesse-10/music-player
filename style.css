@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --main-color: #F0803C;
+    --second-color: #F7EDE6;
+    --accent-color: #E35E39;
+    --active-state: #F6DECE;
+}
+
+html, body{
+    height: 100%;
+    font-size: 100%;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
