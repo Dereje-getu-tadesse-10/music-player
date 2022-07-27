@@ -11,6 +11,11 @@
     --second-color: #F7EDE6;
     --third-color: #F6DECE;
     --accent-color: #E35E39;
+    --progesse-bar: #F0803C;
+    --first-line: #ffc39d;
+    --letter-spacing: 1px;
+    --font-bold: bold;
+    --font-regular: regular;
 }
 
 html, body{
@@ -29,7 +34,6 @@ main{
 
 #container{
     width: 90%;
-    height: 500px;
     border-radius: 30px;
     background-color: var(--third-color);
 }
@@ -46,13 +50,67 @@ main{
     object-fit: cover;
 }
 
+.music-player{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
 
+.song-info .title-song{
+    font-size: 1.3em;
+    letter-spacing: var(--letter-spacing);
+    font-weight: var(--font-bold);
+    color: var(--main-color);
+}
 
+.song-info .artist-name{
+    font-weight: var(--font-regular);
+    letter-spacing: var(--letter-spacing);
+    color: var(--main-color);
+}
 
+.song-progress{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.first-line{
+    position: relative;
+    height: 4px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--first-line);
+}
+
+.second-line{
+    position: absolute;
+    height: 4px;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 30px auto
+}
+
+.shuffle-button,
+.previous-song-button,
+.play-button,
+.next-song-button,
+.repeat-button{
+    cursor: pointer;
+}
 
 @media screen and (min-width: 380px){
     #container{
         width: 340px;
-        height: 500px;
+        height: 450px;
     }
 }
