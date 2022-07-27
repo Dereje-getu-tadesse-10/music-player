@@ -9,8 +9,8 @@
 :root{
     --main-color: #F0803C;
     --second-color: #F7EDE6;
+    --third-color: #F6DECE;
     --accent-color: #E35E39;
-    --active-state: #F6DECE;
 }
 
 html, body{
@@ -24,4 +24,35 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--second-color);
+}
+
+#container{
+    width: 90%;
+    height: 500px;
+    border-radius: 30px;
+    background-color: var(--third-color);
+}
+
+.image-container{
+    padding-top: 10px;
+    margin: auto;
+    width: 95%;
+}
+
+.image-container img{
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+
+
+
+@media screen and (min-width: 380px){
+    #container{
+        width: 340px;
+        height: 500px;
+    }
 }
