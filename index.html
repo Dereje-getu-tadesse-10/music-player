@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="app.js" defer></script>
     <title>Music - player</title>
 </head>
 
@@ -16,43 +20,42 @@
 
     <main>
         <section id="container">
+
             <div class="image-container">
-                <img src="https://www.somagnews.com/wp-content/uploads/2019/10/b5-6-e1572377197508.jpg" alt="logo"
-                    class="logo">
+                <img src="https://www.somagnews.com/wp-content/uploads/2019/10/b5-6-e1572377197508.jpg" alt="song cover"
+                    class="cover default">
             </div>
 
             <div class="music-player">
                 <div class="song-info">
-                    <p class="title-song">Cruel Summer</p>
-                    <p class="artist-name">Taylor Swift</p>
+                    <p class="title-song"></p>
+                    <p class="artist-name"></p>
                 </div>
                 <div class="song-progress">
                     <div class="first-line">
                         <div class="second-line"></div>
                     </div>
-
                 </div>
 
                 <div class="controls">
-                    <div class="shuffle-button">
-                        <img src="./assets/icons/shuffle.svg" alt="shuffle button">
+                    <div class="shuffle-song button">
+                        <i class="fa-solid fa-shuffle"></i>
                     </div>
-                    <div class="previous-song-button">
-                        <img src="./assets/icons/previous.svg" alt="previous button">
+                    <div class="previous-song button">
+                        <i class="fa-solid fa-backward"></i>
                     </div>
-                    <div class="play-button">
-                        <img src="./assets/icons/play.svg" alt="play button">
+                    <div class="play-song button">
+                        <i class="fa-solid fa-play"></i>
                     </div>
-                    <div class="next-song-button">
-                        <img src="./assets/icons/next.svg" alt="next button">
+                    <div class="next-song button">
+                        <i class="fa-solid fa-forward"></i>
                     </div>
-                    <div class="repeat-button">
-                        <img src="./assets/icons/repeat.svg" alt="repeat button">
+                    <div class="repeat-song button">
+                        <i class="fa-solid fa-repeat"></i>
                     </div>
                 </div>
         </section>
     </main>
-
 </body>
 
 </html>
